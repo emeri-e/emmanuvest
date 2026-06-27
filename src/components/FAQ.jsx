@@ -3,24 +3,28 @@ import { ChevronDown, HelpCircle } from 'lucide-react';
 
 const faqItems = [
   {
-    q: "Will I get recordings of the sessions if I miss a class?",
-    a: "Absolutely! Every single live training session, slides, scripts, and links will be compiled and made available for you to download. You get lifetime access to all learning materials."
+    q: "WHY IS THIS MASTERCLASS ONLY ₦2,000?",
+    a: "The goal of this masterclass isn’t just to teach. It’s to help serious learners get started with the right foundation. Keeping the investment affordable allows more people to access practical training before deciding whether to continue with the full CMS program."
   },
   {
-    q: "I don't have a product or service to sell yet, is this helpful?",
-    a: "Yes! In Day 1, we show you how to find hot physical products that people buy willingly, and how to source digital affiliate products that pay 50% commission. You don't need your own product to profit."
+    q: "Is this the CMS Program?",
+    a: "No. This is a Premium WhatsApp Masterclass."
   },
   {
-    q: "Do I need a laptop or paid tools to implement this?",
-    a: "No laptop is required. 99% of our students implement this entire training using only their Android or iOS smartphone. The only tools we use are free WhatsApp automation apps."
+    q: "Does ₦2,000 give me access to CMS?",
+    a: "No. The ₦2,000 covers the masterclass only. CMS is where you implement, grow, and scale on Valpulse."
   },
   {
-    q: "What is the venue and how will the class be hosted?",
-    a: "The class is hosted inside a private, closed WhatsApp group. Modules are delivered through voice recordings, screen share videos, text scripts, and live Q&A. It is 100% remote."
+    q: "Do I need experience?",
+    a: "Not at all. Everything is explained step by step in a beginner-friendly manner."
   },
   {
-    q: "How do I secure my spot and access the group?",
-    a: "Click any 'Reserve Spot' button to open the Checkout window. Complete the registration with your name and email, and you will be immediately redirected to the private WhatsApp group."
+    q: "Will there be a replay?",
+    a: "Yes. You'll receive lifetime access to the replays and training materials."
+  },
+  {
+    q: "Can I ask questions?",
+    a: "Absolutely. There will be a live interactive Q&A session during the masterclass."
   }
 ];
 

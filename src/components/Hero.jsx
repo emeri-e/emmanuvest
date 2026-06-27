@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Calendar, Users, MessageSquare, ArrowRight, ShieldCheck, Sparkles, Clock } from 'lucide-react';
+import { Calendar, Users, MessageSquare, ArrowRight, ShieldCheck, Sparkles, Clock, CheckCircle2 } from 'lucide-react';
 
 export default function Hero({ onCTA }) {
   // Countdown timer logic (dynamic countdown of 14 hours and 42 minutes for high urgency)
@@ -47,15 +47,35 @@ export default function Hero({ onCTA }) {
           </p>
 
           {/* Imagine Section */}
-          <div className="imagine-box glass-card" style={{ marginBottom: '28px', padding: '20px 24px', borderRadius: '16px', borderLeft: '4px solid var(--accent-color)' }}>
-            <h4 style={{ fontSize: '1.05rem', color: 'var(--accent-color)', marginBottom: '10px', display: 'flex', alignItems: 'center', gap: '8px' }}>
-              <Sparkles size={16} /> IMAGINE WHERE YOU COULD BE AFTER THIS MASTERCLASS:
+          <div className="imagine-box glass-card" style={{ marginBottom: '28px', padding: '22px 26px', borderRadius: '16px', borderLeft: '4px solid var(--accent-color)', background: 'linear-gradient(135deg, rgba(37, 211, 102, 0.05), transparent)' }}>
+            <h4 style={{ fontSize: '1.05rem', color: 'var(--accent-color)', marginBottom: '14px', display: 'flex', alignItems: 'center', gap: '8px', letterSpacing: '0.02em', fontWeight: '700' }}>
+              <Sparkles size={18} /> IMAGINE WHERE YOU COULD BE AFTER THIS MASTERCLASS:
             </h4>
-            <ul style={{ listStyle: 'none', padding: 0, margin: 0, display: 'flex', flexDirection: 'column', gap: '8px', fontSize: '0.9rem', color: 'var(--text-primary)' }}>
-              <li>✅ Clear roadmap to getting started with affiliate marketing.</li>
-              <li>✅ Practical strategies you can begin applying immediately.</li>
-              <li>✅ Understanding how successful marketers attract buyers & make sales.</li>
-              <li>✅ The confidence to stop chasing trends and build valuable digital skills.</li>
+            <ul style={{ listStyle: 'none', padding: 0, margin: 0, display: 'flex', flexDirection: 'column', gap: '12px', fontSize: '0.95rem', color: 'var(--text-primary)' }}>
+              <li style={{ display: 'flex', alignItems: 'flex-start', gap: '10px' }}>
+                <span style={{ background: 'var(--badge-bg)', color: 'var(--accent-color)', padding: '4px', borderRadius: '50%', display: 'inline-flex', alignItems: 'center', justifyContent: 'center', marginTop: '2px', border: '1px solid var(--border-color)', boxShadow: '0 0 10px var(--accent-glow)' }}>
+                  <CheckCircle2 size={15} />
+                </span>
+                <span>Clear roadmap to getting started with affiliate marketing.</span>
+              </li>
+              <li style={{ display: 'flex', alignItems: 'flex-start', gap: '10px' }}>
+                <span style={{ background: 'var(--badge-bg)', color: 'var(--accent-color)', padding: '4px', borderRadius: '50%', display: 'inline-flex', alignItems: 'center', justifyContent: 'center', marginTop: '2px', border: '1px solid var(--border-color)', boxShadow: '0 0 10px var(--accent-glow)' }}>
+                  <CheckCircle2 size={15} />
+                </span>
+                <span>Practical strategies you can begin applying immediately.</span>
+              </li>
+              <li style={{ display: 'flex', alignItems: 'flex-start', gap: '10px' }}>
+                <span style={{ background: 'var(--badge-bg)', color: 'var(--accent-color)', padding: '4px', borderRadius: '50%', display: 'inline-flex', alignItems: 'center', justifyContent: 'center', marginTop: '2px', border: '1px solid var(--border-color)', boxShadow: '0 0 10px var(--accent-glow)' }}>
+                  <CheckCircle2 size={15} />
+                </span>
+                <span>Understanding how successful marketers attract buyers & make sales.</span>
+              </li>
+              <li style={{ display: 'flex', alignItems: 'flex-start', gap: '10px' }}>
+                <span style={{ background: 'var(--badge-bg)', color: 'var(--accent-color)', padding: '4px', borderRadius: '50%', display: 'inline-flex', alignItems: 'center', justifyContent: 'center', marginTop: '2px', border: '1px solid var(--border-color)', boxShadow: '0 0 10px var(--accent-glow)' }}>
+                  <CheckCircle2 size={15} />
+                </span>
+                <span>The confidence to stop chasing trends and build valuable digital skills.</span>
+              </li>
             </ul>
           </div>
 

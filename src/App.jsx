@@ -7,8 +7,9 @@ import Curriculum from './components/Curriculum';
 import TargetAudience from './components/TargetAudience';
 import Hosts from './components/Hosts';
 import FAQ from './components/FAQ';
+import CMSOverview from './components/CMSOverview';
 import CheckoutModal from './components/CheckoutModal';
-import { ArrowRight, Sparkles, MessageCircle, AlertCircle } from 'lucide-react';
+import { ArrowRight, Sparkles, MessageCircle, AlertCircle, ShieldCheck } from 'lucide-react';
 
 export default function App() {
   const [theme, setTheme] = useState(() => {
@@ -50,26 +51,29 @@ export default function App() {
       <header className={`header-navbar ${scrolled ? 'scrolled' : ''}`}>
         <div className="container header-container">
           <a href="#hero" className="logo-link">
-            <div className="logo-icon">T</div>
+            <div className="logo-icon">E</div>
             <div className="logo-text">
-              <h3>Tehilla</h3>
+              <h3>Emmanuvest</h3>
               <span>Masterclass</span>
             </div>
           </a>
 
           <nav className="nav-links">
-            <a href="#hero">The Class</a>
-            <a href="#comparison">Comparison</a>
+            <a href="#hero">Overview</a>
+            <a href="#comparison">The Real Truth</a>
             <a href="#learn">Curriculum</a>
-            <a href="#target">Audience</a>
-            <a href="#hosts">Instructors</a>
+            <a href="#target">Who It's For</a>
+            <a href="#hosts">Hosts</a>
+            <a href="#cms">CMS Roadmap</a>
             <a href="#faq">FAQ</a>
           </nav>
 
           <div className="header-actions">
-            <ThemeToggler currentTheme={theme} setTheme={setTheme} />
+            <div style={{ display: 'none' }}>
+              <ThemeToggler currentTheme={theme} setTheme={setTheme} />
+            </div>
             <button className="btn btn-primary btn-header-cta" onClick={openCheckout}>
-              Join Masterclass
+              Reserve Seat (₦2,000)
             </button>
           </div>
         </div>
@@ -88,6 +92,8 @@ export default function App() {
         <TargetAudience />
         
         <Hosts />
+
+        <CMSOverview onCTA={openCheckout} />
         
         <FAQ />
 
@@ -95,41 +101,41 @@ export default function App() {
         <section className="section final-cta-section" id="join">
           <div className="container" style={{ maxWidth: '900px' }}>
             <div className="glass-card cta-card text-center">
-              <span className="section-tag">FINAL CALL</span>
-              <h2>Ready To Command Your WhatsApp Audience?</h2>
+              <span className="section-tag">TAKE ACTION TODAY</span>
+              <h2>YOUR FUTURE WON'T CHANGE... <br /><span style={{ color: 'var(--accent-color)' }}>Until Your Decisions Do.</span></h2>
               <p className="cta-description">
-                Spots are strictly limited to keep class interaction high. Once we start, the price returns to its regular <strong>₦10,000</strong>. Secure your ticket today for only <strong>₦3,000</strong>.
+                Six months from now, you can still be watching other people make money online from the sidelines… Or you can be grateful you finally invested in learning a skill that opened new opportunities for you. <strong>The choice is yours.</strong>
               </p>
               
               <div className="cta-pricing-grid">
                 <div className="cta-price-box">
-                  <span className="cta-price-label">Standard Ticket</span>
-                  <div className="cta-price-value">₦3,000</div>
-                  <span className="cta-price-muted">One-time payment</span>
+                  <span className="cta-price-label">Premium Seat Access</span>
+                  <div className="cta-price-value">₦2,000</div>
+                  <span className="cta-price-muted">🔒 Secure Payment • Instant Access</span>
                 </div>
                 
                 <div className="cta-features-box">
                   <div className="cta-feat-item">
                     <MessageCircle size={16} className="cta-feat-icon" />
-                    <span>2 Days Live Group Access</span>
+                    <span>Live WhatsApp Training & Replay</span>
                   </div>
                   <div className="cta-feat-item">
                     <Sparkles size={16} className="cta-feat-icon" />
-                    <span>Free templates & closing scripts</span>
+                    <span>Sales Frameworks & Script Templates</span>
                   </div>
                   <div className="cta-feat-item">
-                    <AlertCircle size={16} className="cta-feat-icon" />
-                    <span>Recorded sessions & lifetime downloads</span>
+                    <ShieldCheck size={16} className="cta-feat-icon" />
+                    <span>Private WhatsApp Community Access</span>
                   </div>
                 </div>
               </div>
 
               <button className="btn btn-primary btn-large-cta" onClick={openCheckout}>
-                Secure My Seat Now (₦3,000)
+                Reserve Your Seat Today — Only ₦2,000
                 <ArrowRight size={20} />
               </button>
               
-              <p className="cta-guarantee">🛡️ 100% Satisfaction Guarantee. Learn practical skills or get your money back.</p>
+              <p className="cta-guarantee">🛡️ Invest in clarity. Learn practical skills. Take the first step toward building your online income journey.</p>
             </div>
           </div>
         </section>
@@ -140,20 +146,20 @@ export default function App() {
         <div className="container footer-container">
           <div className="footer-top">
             <div className="footer-logo">
-              <div className="logo-icon">T</div>
-              <h3>Tehilla solutions</h3>
+              <div className="logo-icon">E</div>
+              <h3>Coach Emmanuvest</h3>
             </div>
-            <p>Empowering creators and business operators with high-converting online systems.</p>
+            <p>Empowering ambitious individuals with practical digital skills and proven online systems.</p>
           </div>
           
           <div className="footer-divider"></div>
           
           <div className="footer-bottom">
-            <span>© {new Date().getFullYear()} Tehilla Solutions. All Rights Reserved.</span>
+            <span>© {new Date().getFullYear()} Emmanuvest Masterclass. All Rights Reserved.</span>
             <div className="footer-links">
               <a href="#hero">Terms of Service</a>
               <a href="#hero">Privacy Policy</a>
-              <a href="mailto:support@tehillasolutions.com">Support</a>
+              <a href="#hero">Support</a>
             </div>
           </div>
         </div>

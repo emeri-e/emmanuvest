@@ -14,7 +14,7 @@ export default function CheckoutModal({ isOpen, onClose }) {
     setIsSubmitting(true);
     
     // Construct customized message
-    const message = `Hello Emmanuel, my name is ${name.trim()}. I want to register for the WhatsApp Sales Masterclass.`;
+    const message = `Hello Coach Emmanuvest, my name is ${name.trim()}. I want to register for the Premium WhatsApp Money-Making Masterclass (₦2,000).`;
     const whatsappUrl = `https://wa.me/2347044462458?text=${encodeURIComponent(message)}`;
 
     setTimeout(() => {
@@ -36,13 +36,13 @@ export default function CheckoutModal({ isOpen, onClose }) {
 
         <form onSubmit={handleSubmit} className="modal-form">
           <div className="modal-header">
-            <h2>Join the Masterclass</h2>
-            <p>Enter your full name to connect on WhatsApp and secure your early-bird spot.</p>
+            <h2>Reserve Your Seat Today</h2>
+            <p>Enter your full name to connect on WhatsApp and get instant access after registration.</p>
           </div>
           
           <div className="order-summary-card">
-            <span>WhatsApp Sales Masterclass Ticket</span>
-            <span className="summary-price">₦3,000</span>
+            <span>Premium WhatsApp Masterclass Ticket</span>
+            <span className="summary-price">₦2,000</span>
           </div>
 
           <div className="input-group">
