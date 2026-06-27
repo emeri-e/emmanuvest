@@ -15,7 +15,7 @@ export default function CheckoutModal({ isOpen, onClose }) {
     
     // Construct customized message
     const message = `Hello Coach Emmanuvest, my name is ${name.trim()}. I want to register for the Premium WhatsApp Money-Making Masterclass (₦2,000).`;
-    const whatsappUrl = `https://wa.me/2347044462458?text=${encodeURIComponent(message)}`;
+    const whatsappUrl = `https://wa.me/2349112663866?text=${encodeURIComponent(message)}`;
 
     setTimeout(() => {
       window.open(whatsappUrl, '_blank');
